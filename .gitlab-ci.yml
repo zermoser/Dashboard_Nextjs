@@ -1,0 +1,28 @@
+cache:
+  paths:
+    - .next/
+    - node_modules/
+
+stages:
+  - deploy_dev
+
+before_script:
+  - export COMMIT_TIME=$(git show -s --format=%cd --date=format:%Y%m%dT%H%M%S $CI_COMMIT_SHA)
+  - echo $COMMIT_TIME
+
+# For UAT.
+deploy_dev:
+  stage: deploy_dev
+  script:
+    - pwd
+    - sudo docker build -t selfportal-frontend -f dockerfile .
+    # - sudo docker stop oneportal-frontend
+    # - sudo docker rm oneportal-frontend
+    - sudo docker run --detach --expose="3000" -p 3000:3000 --name="selfportal-frontend" selfportal-frontend
+  tags:
+    - develop-selfportal #ใส่ชื่อ tags ที่เราต้องการใช้ เดียวจะเอาไปใช้กับ gitlab-runner ด้วย
+  environment:
+    name: dev #ตั้งชื่ออะไรก็ได้
+    url: 203.151.88.95 #ใส่ ip ของเครื่อง vm
+  only:
+    - dev-server #ใส่ชื่อ branch ที่เราต้องการใช้
