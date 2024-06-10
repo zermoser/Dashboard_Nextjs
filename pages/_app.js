@@ -1,6 +1,5 @@
 import "../styles/globals.css";
 import useLayout from "../utils/useLayout";
-import LoaderPage from "../components/LoaderPage";
 
 function MyApp({ Component, pageProps }) {
   const Layout = useLayout();
@@ -9,7 +8,6 @@ function MyApp({ Component, pageProps }) {
       <Component {...pageProps} />
     </Layout>
   );
-  // return <Component {...pageProps} />;
 }
 
 export default MyApp;

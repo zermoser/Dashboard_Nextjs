@@ -8,8 +8,6 @@ body {
 
   font-family: "Roboto_Regular", sans-serif;
 
-  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
 }
 
 a {
@@ -21,12 +19,6 @@ a {
   box-sizing: border-box;
 }
 
-/* @font-face {
-  font-family: "Roboto_normal";
-  src: url('../public/fonts/Mitr-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-} */
 @font-face {
   font-family: "Roboto_Bold";
   src: url('../public/fonts/roboto/Roboto-Bold.ttf') format('truetype');
@@ -59,23 +51,9 @@ a {
     color-scheme: dark;
   }
 
-  /* @font-face {
-    font-family: "Mitr", sans-serif;
-    src: url('../public/fonts/Mitr-Bold.ttf') format('truetype'),
-    url('../public/fonts/Mitr-ExtraLight.ttf') format('truetype'),
-    url('../public/fonts/Mitr-Light.ttf') format('truetype'),
-    url('../public/fonts/Mitr-Medium.ttf') format('truetype'),
-    url('../public/fonts/Mitr-Regular.ttf') format('truetype'),
-    url('../public/fonts/Mitr-SemiBold.ttf') format('truetype'),
-  } */
-
   body {
     height: 100%;
     background: linear-gradient(#FFFFFF 0%, #E8F4FF 50%, #FFFFFF 100%)
   }
 
-  /* body {
-    color: black;
-    background: white;
-  } */
 }

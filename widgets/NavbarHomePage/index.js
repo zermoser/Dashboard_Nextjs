@@ -66,7 +66,7 @@ export default function NavbarHomePage() {
           <li className="home-page active" onClick={(e) => handleClick(e)}>
             หน้าหลัก {stateDialog}
           </li>
-          <li className={"about-me"} onClick={(e) => handleClick(e)}>
+          <li className="about-me" onClick={(e) => handleClick(e)}>
             เกี่ยวกับเรา
           </li>
           <li className="why-me" onClick={(e) => handleClick(e)}>

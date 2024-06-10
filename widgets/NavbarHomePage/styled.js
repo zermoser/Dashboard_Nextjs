@@ -5,7 +5,6 @@ export const NavBarHeader = styled.div`
   color: ${theme.COLORS.BLACK_1};
   position: fixed;
   z-index: 1000;
-  // height: 100%;
   width: 100%;
 
   .space-area {
@@ -17,19 +16,8 @@ export const NavBarHeader = styled.div`
     justify-content: space-between;
     font-weight: 700;
     font-size: 16px;
-    // padding-left: 12vw;
     padding-top: 1vh;
-    // width: 88vw;
   }
-  // .nav {
-  //   font-weight: 700;
-  //   font-size: 16px;
-  //   // width: 88vw;
-  //   height: 7vh;
-  //   display: flex;
-  //   justify-content: space-between;
-  //   align-items: center;
-  // }
   .nav-header {
     margin-left: 12vw;
     display: flex;
@@ -37,6 +25,7 @@ export const NavBarHeader = styled.div`
   }
   .icon-bar {
     margin-right: 5vw;
+    cursor: pointer;
   }
   .home-page {
     white-space: nowrap;
@@ -64,6 +53,7 @@ export const NavBarHeader = styled.div`
   }
   .contact-us {
     white-space: nowrap;
+    margin-right: 3vw;
     cursor: pointer;
     color: ${theme.COLORS.GREY_4};
   }
@@ -72,12 +62,9 @@ export const NavBarHeader = styled.div`
     color: ${theme.COLORS.BLUE_MAIN};
   }
   .nav-footer {
-    // width: 25vw;
     display: flex;
     margin-right: 12vw;
     align-items: center;
-
-    // justify-content: flex-end;
   }
   .icon-language {
     white-space: nowrap;

@@ -85,7 +85,6 @@ export default function NavbarMainPage() {
     <NarBarPageHeader>
       <div className="nav-toggle-btn" onClick={(e) => handleClickNav(e)}>
         <MenuOutlinedIcon />
-        {/* <MenuOutlinedIcon sx={{ transform: "rotate(90deg)" }} /> */}
       </div>
       <div className="nav-area">
         <div className="nav-header">
