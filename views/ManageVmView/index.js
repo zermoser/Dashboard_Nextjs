@@ -10,11 +10,8 @@ import CardHeaderView from "./CardHeaderView";
 import SearchInput from "../../components/SearchInput";
 
 
-const handleClick = async () => {};
-
 const handleSearch = (value) => {
   console.log(value)
-
 };
 
 export default function ManageVmView() {

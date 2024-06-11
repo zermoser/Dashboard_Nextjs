@@ -24,12 +24,13 @@ import ProgressBarDetail from "../../../components/ProgressBarDetail/index";
 
 import CircleIcon from "@mui/icons-material/Circle";
 
-import { Tabs } from "antd";
-const { TabPane } = Tabs;
 
-import dynamic from "next/dynamic";
 import { theme } from "../../../theme";
-const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
+
+
+const handleSearch = (value) => {
+  console.log(value)
+};
 
 export default function VmDetailCharts() {
   const Status_History_columns = [
@@ -203,7 +204,7 @@ export default function VmDetailCharts() {
 
             <TableSearchBox>
               <SearchOutline>
-                <SearchInput />
+                <SearchInput onChange={handleSearch} />
               </SearchOutline>
               <ButtonApp height="40px" title="Export" />
             </TableSearchBox>
